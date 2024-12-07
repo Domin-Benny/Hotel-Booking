@@ -1,0 +1,36 @@
+
+@font-face {
+  font-family: "Signature"; 
+  src: url("/fonts/font-01.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Signature-1"; 
+  src: url("/fonts/font-02.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Signature-2"; 
+  src: url("/fonts/font-03.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Signature-3"; 
+  src: url("/fonts/font-04.ttf") format("truetype");
+}
+
+.font-01 {
+  font-family: "Signature";
+}
+
+.font-02 {
+  font-family: "Signature-1";
+}
+
+.font-03 {
+  font-family: "Signature-2";
+}
+
+.font-04 {
+  font-family: "Signature-3";
+}
