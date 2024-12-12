@@ -47,10 +47,10 @@ const _Home = () => {
         </div>
       </div>
 
-      {/* Add id to target the InnerHome section */}
       <div id="inner-home" className="w-screen ">
         <InnerHome />
       </div>
+      
       <Footer />
     </div>
   )

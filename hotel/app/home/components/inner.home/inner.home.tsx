@@ -5,22 +5,21 @@ import Link from 'next/link'
 
 const InnerHome = () => {
     return (
-        <div className="w-screen h-max bg-blue-100 ">
-            <div className="w-screen h-max m-6">
+        <div className="w-screen bg-blue-100 py-4 flex flex-col items-center justify-center ">
+            <div className="w-screen h-max gap-5 flex flex-col items-center justify-center ">
                 {
                     InnerMap.map((i, index) => (
-                        <div key={i.key} className="w-screen h-[70vh] m-5 ">
-                            <div className={`w-full h-[70vh] flex items-center justify-between ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
+                        <div key={i.key} className="w-full h-[70vh]  overflow-hidden ">
+                            <div className={`w-full h-[70vh] flex items-center justify-between gap-5 ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
                                 {/* Image Section */}
                                 <Image 
                                     src={i.image} 
                                     width={500} 
                                     height={500} 
-                                    className="w-[40%] h-auto object-cover" 
+                                    className="w-[50%] h-auto object-cover" 
                                     alt="img" 
                                 />
-                                {/* Description Section */}
-                                <div className={`w-[55%] h-max flex flex-col justify-center ${index % 2 === 0 ? 'items-start' : 'items-end'} `}>
+                                <div className={`w-[50%] h-max flex flex-col justify-center ${index % 2 === 0 ? 'items-start' : 'items-end'} `}>
                                     <p className={`w-10/12 text-blue-900 text-2xl ${index % 2 === 0 ? "text-left" : "text-right"} `}>
                                         {i.description.repeat(5)}
                                     </p>
@@ -35,6 +34,19 @@ const InnerHome = () => {
                         </div>
                     ))
                 }
+
+              <div className=" w-full h-[40vh] gap-10 flex flex-col items-center justify-center ">
+                <h1 className=" text-2xl font-extrabold text-blue-900 uppercase underline decoration-double " >or Book Using</h1>
+                <div className=" w-full h-max flex justify-evenly items-center ">
+                <Link href={""} >
+                    <Image className=" w-40 h-auto " src={"/images/book/booking.com.png"} width={100} height={100} alt="Booking.com" />
+                  </Link>
+                  <Link href={""} >
+                    <Image className=" w-40 h-auto " src={"/images/book/tripadvisor.png"} width={100} height={100} alt="Tripadvisor" />
+                  </Link>
+                </div>
+              </div>
+
             </div>
         </div>
     )

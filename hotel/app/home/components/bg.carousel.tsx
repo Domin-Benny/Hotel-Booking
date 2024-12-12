@@ -4,11 +4,11 @@ import { useState, useEffect } from 'react'
 
 const BGCarousel = () => {
     const images = [
-        "/images/bg-01.jpg",
-        "/images/bg-02.jpg",
-        "/images/bg-03.jpg",
-        "/images/bg-04.jpg",
-        "/images/bg-05.jpg",
+        "/images/bg.images/bg-01.jpg",
+        "/images/bg.images/bg-02.jpg",
+        "/images/bg.images/bg-03.jpg",
+        "/images/bg.images/bg-04.jpg",
+        "/images/bg.images/bg-05.jpg",
     ]
     const [currentIndex, setCurrentIndex] = useState(0)
 
