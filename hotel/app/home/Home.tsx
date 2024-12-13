@@ -1,20 +1,20 @@
 "use client"
-import React from 'react'
-import BGCarousel from './components/bg.carousel'
-import Header from '../components/header/header'
-// import Link from 'next/link'
-import { FaChevronDown } from 'react-icons/fa6'
-import InnerHome from './components/inner.home/inner.home'
-import Footer from '../components/footer/footer'
+import React from "react"
+import BGCarousel from "./components/bg.carousel"
+import Header from "../components/header/header"
+// import Link from "next/link"
+import { FaChevronDown } from "react-icons/fa6"
+import InnerHome from "./components/inner.home/inner.home"
+import Footer from "../components/footer/footer"
 
 const _Home = () => {
   const scrollToInnerHome = () => {
-    document.getElementById('inner-home')?.scrollIntoView({ behavior: 'smooth' })
+    document.getElementById("inner-home")?.scrollIntoView({ behavior: "smooth" })
   }
 
   return (
     <div className="w-screen h-max flex flex-col overflow-x-hidden">
-      <div className=" h-[100v ">
+      <div className="  ">
         <div className="absolute -z-10 bg-[#00000066] w-screen h-[100vh] overflow-hidden"></div>
 
         <div className="absolute -z-20 w-screen h-screen overflow-hidden">

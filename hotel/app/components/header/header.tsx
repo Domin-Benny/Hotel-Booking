@@ -28,7 +28,7 @@ const Header = () => {
                   <Link
                     key={h.key}
                     href={h.link}
-                    className="mx-3 text-lg w-[8rem] h-12 border-2 border-blue-500 text-blue-500 rounded-md flex justify-center items-center hover:bg-[#00000066] transition duration-300 ease-in-out"
+                    className="mx-3 text-lg w-[8rem] h-12 border-2 bg-[#0b113636] border-blue-500 text-blue-500 rounded-md flex justify-center items-center hover:bg-[#00000066] transition duration-300 ease-in-out"
                   >
                     {h.title}
                   </Link>

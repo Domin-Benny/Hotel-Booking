@@ -14,21 +14,21 @@ const FooterComponents = () => {
         <li>Restaurant</li>
       </div>
       <div className=" w-1/4 flex flex-col justify-center items-center gap-3 list-none ">
-        <li className=" text-2xl font-extrabold " >Header</li>
-        <li>Text 1</li>
-        <li> Text 2</li>
-        <li>Text 3</li>
-        <li>Text 4</li>
+        <li className=" text-2xl font-extrabold " >Partners</li>
+        <li>Tripadvisor</li>
+        <li>Booking.com</li>
+        <li>Airbnb</li>
+        <li>Agoda.com</li>
       </div>
       <div className=" w-1/4 flex flex-col justify-center items-center gap-3 list-none ">
-        <li className=" text-2xl font-extrabold " >Header</li>
-        <li>Text 1</li>
-        <li> Text 2</li>
-        <li>Text 3</li>
-        <li>Text 4</li>
+        <li className=" text-2xl font-extrabold text-blue-950 select-none " >.</li>
+        <li>About Us</li>
+        <Link href={'/contact-us'}>Contact Us</Link>
+        <li>Terms & Conditions</li>
+        <li>Privacy Policy</li>
       </div>
       <div className=" w-1/4 flex flex-col justify-center items-center gap-3 list-none ">
-        <li className=" text-2xl font-extrabold " >Header</li>
+        <li className=" text-2xl font-extrabold " >Follow Us</li>
         <Link href={"/"}>
           <FaFacebook />
         </Link>
@@ -38,7 +38,7 @@ const FooterComponents = () => {
         <Link href={"/"}>
           <FaInstagram />
         </Link>
-        <Link href={"/"}>
+        <Link href={"/contact-us"}>
           <FaEnvelope />
         </Link>
       </div>

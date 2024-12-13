@@ -12,6 +12,12 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      backgroundImage: {
+        "room": "url('/images/bg.images/bedroom.jpg')",
+        "conference": "url('/images/bg.images/conference.jpg')",
+        "event": "url('/images/bg.images/event.jpg')",
+        "restaurant": "url('/images/bg.images/restaurant.jpg')",
+      }
     },
   },
   plugins: [],

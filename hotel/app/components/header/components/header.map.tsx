@@ -8,7 +8,7 @@ interface HeaderProps {
 const HeaderMap: HeaderProps[] = [
   {
     key: 1,
-    title: "Overview",
+    title: "Home",
     link: "/"
   },
   {
@@ -19,7 +19,7 @@ const HeaderMap: HeaderProps[] = [
   {
     key: 3,
     title: "Restaurant",
-    link: "/restaurant"
+    link: "/restaurants"
   },
   {
     key: 4,
