@@ -3,6 +3,7 @@ import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBed, faLightbulb, faUtensils, faGlassMartiniAlt, faUsers, faCalendarCheck } from "@fortawesome/free-solid-svg-icons";
+import ContactInfo from "./components/contact.component";
 
 const Contact = () => {
   return (
@@ -58,6 +59,7 @@ const Contact = () => {
       {/* Content */}
       <div className=" w- h-max min-h-screen flex relative flex-col justify-center items-center ">
         <Header />
+        <ContactInfo />
         <Footer />
       </div>
     </div>
