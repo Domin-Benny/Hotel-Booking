@@ -1,6 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var InnerMap = [
+const InnerMap = [
     {
         key: 1,
         title: "Rooms",
@@ -34,4 +32,4 @@ var InnerMap = [
         redirect: "Book a Table"
     }
 ];
-exports.default = InnerMap;
+export default InnerMap;

@@ -1,6 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var HeaderMap = [
+const HeaderMap = [
     {
         key: 1,
         title: "Home",
@@ -27,4 +25,4 @@ var HeaderMap = [
         link: "/gallery"
     }
 ];
-exports.default = HeaderMap;
+export default HeaderMap;

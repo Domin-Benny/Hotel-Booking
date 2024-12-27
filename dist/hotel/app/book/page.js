@@ -1,12 +1,6 @@
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.default = Page;
-var react_1 = __importDefault(require("react"));
-var Book_1 = __importDefault(require("./Book"));
-function Page() {
-    return (react_1.default.createElement(react_1.default.Fragment, null,
-        react_1.default.createElement(Book_1.default, null)));
+import { jsx as _jsx, Fragment as _Fragment } from "react/jsx-runtime";
+import React from 'react';
+import Book from './Book';
+export default function Page() {
+    return (_jsx(_Fragment, { children: _jsx(Book, {}) }));
 }

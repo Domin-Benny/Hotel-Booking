@@ -1,17 +1,18 @@
 {
     "compilerOptions": {
-      "target": "es5",
-      "module": "commonjs",
+      "target": "ES6",
+      "module": "ESNext",
       "strict": true,
-      "jsx": "react", // This is important for React JSX syntax
+      "jsx": "react-jsx",                       // Updated for TypeScript 4.x and above
       "outDir": "./dist",
       "rootDir": "./",
+      "moduleResolution": "node",
       "esModuleInterop": true,
       "skipLibCheck": true,
       "forceConsistentCasingInFileNames": true,
       "allowJs": true,
       "checkJs": false
     },
-    "include": ["hotel/app/**/*"]
+    "include": ["hotel/app/**/*"],
+    "exclude": ["node_modules"]  // Exclude node_modules from TypeScript compilation
   }
-  

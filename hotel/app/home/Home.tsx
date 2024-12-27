@@ -9,8 +9,12 @@ import Footer from "../components/footer/footer";
 
 const _Home: React.FC = () => {
   const scrollToInnerHome = () => {
-    document.getElementById("inner-home")?.scrollIntoView({ behavior: "smooth" });
+    const element = document.getElementById("inner-home");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
   };
+  
 
   return (
     <div className="w-screen h-max flex flex-col overflow-x-hidden">
