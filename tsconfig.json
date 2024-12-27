@@ -3,7 +3,7 @@
       "target": "ES6",
       "module": "ESNext",
       "strict": true,
-      "jsx": "react-jsx",                       // Updated for TypeScript 4.x and above
+      "jsx": "react-jsx",  // For React 17+ JSX transformation
       "outDir": "./dist",
       "rootDir": "./",
       "moduleResolution": "node",
@@ -11,8 +11,11 @@
       "skipLibCheck": true,
       "forceConsistentCasingInFileNames": true,
       "allowJs": true,
-      "checkJs": false
+      "checkJs": false,
+      "typeRoots": ["node_modules/@types", "node_modules"],
+      "types": ["node", "react"]
     },
     "include": ["hotel/app/**/*"],
-    "exclude": ["node_modules"]  // Exclude node_modules from TypeScript compilation
+    "exclude": ["node_modules"]
   }
+  
