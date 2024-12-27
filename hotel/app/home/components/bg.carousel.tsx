@@ -1,26 +1,27 @@
-"use client"
-import Image from 'next/image'
-import { useState, useEffect } from 'react'
+"use client";
+import React from 'react';
+import Image from 'next/image';
+import { useState, useEffect } from 'react';
 
-const BGCarousel = () => {
+const BGCarousel: React.FC = () => {
     const images = [
         "/images/bg.images/bg-01.jpg",
         "/images/bg.images/bg-02.jpg",
         "/images/bg.images/bg-03.jpg",
         "/images/bg.images/bg-04.jpg",
         "/images/bg.images/bg-05.jpg",
-    ]
-    const [currentIndex, setCurrentIndex] = useState(0)
+    ];
+    const [currentIndex, setCurrentIndex] = useState(0);
 
     // Automatically change slides
     useEffect(() => {
         const interval = setInterval(() => {
-            setCurrentIndex((prev) => (prev + 1) % images.length)
-        }, 5000) // Change every 5 seconds
+            setCurrentIndex((prev) => (prev + 1) % images.length);
+        }, 5000); // Change every 5 seconds
 
         // Clear the interval when the component unmounts
-        return () => clearInterval(interval)
-    }, [images.length])
+        return () => clearInterval(interval);
+    }, [images.length]);
 
     return (
         <div className="relative w-full h-screen overflow-hidden">
@@ -42,7 +43,7 @@ const BGCarousel = () => {
                 ))}
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default BGCarousel
+export default BGCarousel;

@@ -1,11 +1,11 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import BedroomBooking from "./room.booking";
 import ConferenceRoomBooking from "./conference.booking";
 import RestaurantBooking from "./bars.booking";
 import EventBooking from "./event.booking";
 
-const BookingComponent = () => {
+const BookComponent = () => {
   const [activeTab, setActiveTab] = useState("bedroom");
 
   const getBackgroundClass = () => {
@@ -24,7 +24,7 @@ const BookingComponent = () => {
   };
 
   return (
-    <div className={` w-screen min-h-screen ${getBackgroundClass()} bg-cover bg-center mt-10 text-blue-900 p-8`}>
+    <div className={`w-screen min-h-screen ${getBackgroundClass()} bg-cover bg-center mt-10 text-blue-900 p-8`}>
       <div className="container mx-auto">
         <div className="flex justify-center mb-6">
           <div className="inline-flex rounded-md shadow-sm" role="group">
@@ -33,11 +33,11 @@ const BookingComponent = () => {
                 key={tab}
                 type="button"
                 onClick={() => setActiveTab(tab)}
-                className={`w-[150px] py-2 text-sm font-bold  border-t border-b border-gray-300 transition duration-300 ease-in-out
-                  ${activeTab === tab ? " bg-blue-600 text-white  " : "bg-[#e8eeff8f] backdrop-blur-sm  text-blue-600 hover:bg-[#8aa6fb66] "}
-                  ${tab === "bedroom" ? "rounded-l-md border " : ""}
-                  ${tab === "event" ? "rounded-r-md border " : ""}
-                  ${tab === "restaurant" ? " border-r " : ""}`}
+                className={`w-[150px] py-2 text-sm font-bold border-t border-b border-gray-300 transition duration-300 ease-in-out
+                  ${activeTab === tab ? "bg-blue-600 text-white" : "bg-[#e8eeff8f] backdrop-blur-sm text-blue-600 hover:bg-[#8aa6fb66]"}
+                  ${tab === "bedroom" ? "rounded-l-md border" : ""}
+                  ${tab === "event" ? "rounded-r-md border" : ""}
+                  ${tab === "restaurant" ? "border-r" : ""}`}
               >
                 {tab === "bedroom"
                   ? "Hotel Room"
@@ -60,4 +60,4 @@ const BookingComponent = () => {
   );
 };
 
-export default BookingComponent;
+export default BookComponent;

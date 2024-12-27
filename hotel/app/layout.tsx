@@ -1,13 +1,12 @@
-import type { Metadata } from "next"
-import "./globals.css"
-import "./assets/fonts.css"
-
-
+import React from 'react';
+import type { Metadata } from "next";
+import "./globals.css";
+import "./assets/fonts.css";
 
 export const metadata: Metadata = {
   title: "Evita Hotel",
   description: "Hotel Booking App",
-}
+};
 
 export default function RootLayout({
   children,
@@ -22,5 +21,5 @@ export default function RootLayout({
         {children}
       </body>
     </html>
-  )
+  );
 }

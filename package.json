@@ -1,0 +1,27 @@
+{
+  "name": "hotel-booking",
+  "version": "1.0.0",
+  "description": "Please before you run the code make sure you have the following installed and configured: NodeJs",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Domin-Benny/Hotel-Booking.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Domin-Benny/Hotel-Booking/issues"
+  },
+  "homepage": "https://github.com/Domin-Benny/Hotel-Booking#readme",
+  "devDependencies": {
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.7.2",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
+  }
+}

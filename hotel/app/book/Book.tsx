@@ -5,7 +5,7 @@ import BookComponent from "./components/book.components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBed, faLightbulb, faUtensils, faGlassMartiniAlt, faUsers, faCalendarCheck } from "@fortawesome/free-solid-svg-icons";
 
-const Book = () => {
+const Book: React.FC = () => {
   return (
     <div className="relative w-screen h-max min-h-screen bg-blue-50 overflow-hidden">
       {/* Background Icons */}

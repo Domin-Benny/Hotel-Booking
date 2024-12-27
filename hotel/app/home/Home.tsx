@@ -1,16 +1,16 @@
-"use client"
-import React from "react"
-import BGCarousel from "./components/bg.carousel"
-import Header from "../components/header/header"
-// import Link from "next/link"
-import { FaChevronDown } from "react-icons/fa6"
-import InnerHome from "./components/inner.home/inner.home"
-import Footer from "../components/footer/footer"
+"use client";
+import React from "react";
+import BGCarousel from "./components/bg.carousel";
+import Header from "../components/header/header";
+// import Link from "next/link";
+import { FaChevronDown } from "react-icons/fa6";
+import InnerHome from "./components/inner.home/inner.home";
+import Footer from "../components/footer/footer";
 
-const _Home = () => {
+const _Home: React.FC = () => {
   const scrollToInnerHome = () => {
-    document.getElementById("inner-home")?.scrollIntoView({ behavior: "smooth" })
-  }
+    document.getElementById("inner-home")?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <div className="w-screen h-max flex flex-col overflow-x-hidden">
@@ -53,7 +53,7 @@ const _Home = () => {
       
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default _Home
+export default _Home;
