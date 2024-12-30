@@ -7,7 +7,7 @@ import { FaChevronDown } from "react-icons/fa6";
 import InnerHome from "./components/inner.home/inner.home";
 import Footer from "../components/footer/footer";
 
-const _Home: React.FC = () => {
+const Home: React.FC = () => {
   const scrollToInnerHome = () => {
     const element = document.getElementById("inner-home");
     if (element) {
@@ -60,4 +60,4 @@ const _Home: React.FC = () => {
   );
 };
 
-export default _Home;
+export default Home;
